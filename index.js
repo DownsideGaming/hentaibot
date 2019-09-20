@@ -33,20 +33,6 @@ fs.readdir("./commands/nsfw/", (err, files) => {
   });
 });
 
-//Bot Status timer
-var timer;
-var i = 0;
-  timer = client.setInterval(function () {
-    var gamePresence = [
-      `hentai`,
-      `-help`,
-      `porn`,
-      `${client.guilds.size} Servers!`,
-      `${client.users.size} Users!`
-    ];
-    client.user.setPresence({ game: { name: gamePresence[i%gamePresence.length], type: 3 } });
-    i++;
-  },7500);
 //End of code
 
 //Log the Bot in.
