@@ -1,6 +1,6 @@
 # hentaibot
 A bot that gets hentai and NSFW images and posts them to discord
-* Go to [https://hentai.glitch.me/#cmds](https://hentai.glitch.me/#cmds) For a full command list.
+* Go to [https://doritobot.glitch.me/#cmds](https://hentai.glitch.me/#cmds) For a full command list.
 
 ## Getting your credentials:
 * Go to the [Discord Developer Portal](https://discordapp.com/developers/applications/)
