@@ -36,29 +36,6 @@ fs.readdir("./commands/nsfw/", (err, files) => {
 //End of code
 
 //Log the Bot in.
-
-client.on('guildMemberAdd', member => {
-  let logChannel = member.guild.channels.find('name', 'welcome');
-  
-    let logEmbed = new Discord.RichEmbed()
-    .setAuthor("New member joined!") 
-    .setDescription("Welcome to the server " + member.user.username.toString())
-    .setColor('RANDOM')
-    .setFooter("enjoy your stay", member.user.displayAvatarURL)
-    .setTimestamp()
-    logChannel.send(logEmbed);
-  })
-  client.on('guildMemberRemove', member => {
-  let logChannel = member.guild.channels.find('name', 'welcome');
-  
-    let logEmbed = new Discord.RichEmbed()
-    .setAuthor("Member left the server") 
-      .setDescription("Goodbye " + member.user.username )
-    .setFooter("sorry to see you leave", member.user.displayAvatarURL)
-    .setColor('RANDOM')
-    .setTimestamp()
-    logChannel.send(logEmbed);
-  })
   
 
 client.login(config.token);
